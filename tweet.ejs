@@ -1,0 +1,36 @@
+<div style="border-style: solid; border-width: 10px; border-color: #222; background-color: #eee; padding: 3px;">
+<div style="style="float: left;">
+<a href="http://twitter.com/<%= tweet.screen_name %>">
+<img align="left" src="<%= tweet.profile_image_url %>">
+</a>
+<a style="color: #02b9cb;" href="http://twitter.com/<%= tweet.screen_name %>">@<%= tweet.screen_name %></a>
+   <%= tweet.name %>
+   <br/>
+   <span style="font-size: 70%;">
+   <a style="color: #02b9cb;" href="<%= tweet.user_url %>"><%= tweet.user_url %></a> <%= tweet.user_location %>
+   </span>
+</div>
+<p style="font-size: 180%; padding: 4px; margin: 4px;"><a style="color: black;" href="<%=
+         tweet.twurl.url
+    %>"><%= tweet.tweet %></a></p>
+<p><%= tweet.created_at %> 
+<%
+  if (tweet.mentions.length > 0) {
+    for (var i = 0; i < tweet.mentions.length; i++) {
+       %> <a style="color: #02b9cb; font-size: 70%;" href="http://twitter.com/<%=
+                    tweet.mentions[i].screen_name
+              %>"><%= tweet.mentions[i].name %></a><%
+    }
+  } 
+%>
+<%
+  if (tweet.hashtags.length > 0) {
+    for (var i = 0; i < tweet.hashtags.length; i++) {
+       %> <a style="color: #02b9cb; font-size: 70%;" href="http://twitter.com/search?q=#<%=
+                    tweet.hashtags[i].text
+             %>">#<%= tweet.hashtags[i].text %></a><%
+    }
+  } 
+%>
+</p>
+</div>

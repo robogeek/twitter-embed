@@ -1,0 +1,17 @@
+{
+  "author": "David Herron <david@davidherron.com> (http://nodejs.davidherron.com)",
+  "name": "twitter-embed",
+  "description": "Generate HTML code for embedding tweets on web pages",
+  "version": "0.0.1",
+  "repository" : { 
+    "type": "git", 
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.4.12"
+  },
+  "directories" : { "lib" : "./lib" },
+  "dependencies": { "request": "*" },
+  "devDependencies": {}
+}
+
