@@ -8,8 +8,8 @@ It is an npm module (at the moment not in the npm repositories)
 
 Once it is installed you can write an application like so:-
 
-   var tw = require('./twitter-embed');
-   tw.formatTweet(process.argv[2], function(text) { console.log(text); } );
+    var tw = require('./twitter-embed');
+    tw.formatTweet(process.argv[2], function(text) { console.log(text); } );
 
 Internally it uses an EJS based template to format the tweet.  TBD: Allow the program to specify a template
 
