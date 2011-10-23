@@ -23,7 +23,7 @@ The twitter API endpoints used are:
 
 An example tweet output is:
 
-    ```html
+    ``` html
     <div style="border-style: solid; border-width: 10px; border-color: #222; background-color: #eee; padding: 3px;">
     <div style="style="float: left;">
     <a href="http://twitter.com/CAUSECAST">
