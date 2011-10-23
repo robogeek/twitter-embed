@@ -1,4 +1,4 @@
-# twitter-embed: embed nice tweets as HTML in web pages
+# twitter-embed: embed tweets as nice HTML in web pages
 
 The goal of twitter-embed is to generate HTML for embedding a twitter posting on a web page. Some time ago Twitter had a web tool named Blackbird Pie that did this, but that service no longer appears to be in existence.  
 
