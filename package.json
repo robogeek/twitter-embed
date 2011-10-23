@@ -7,6 +7,8 @@
     "type": "git", 
     "url": ""
   },
+  "bugs": "https://github.com/robogeek/twitter-embed/issues",
+  "homepage": "https://github.com/robogeek/twitter-embed",
   "engines": {
     "node": "~0.4.12"
   },
